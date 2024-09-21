@@ -1,0 +1,414 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Очищаємо базові стилі списків */
+  ul, ol {
+    list-style: none;
+  }
+  
+  /* Прибираємо підкреслення посилань */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Робимо зображення адаптивними */
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  
+  /* Прибираємо стандартні стилі кнопок */
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+
+body {
+    font-family: "Source Sans 3", sans-serif;
+    font-style: normal;
+}
+
+
+  /* ===========HEADER========== */
+
+
+.section_header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px 10px 15px;
+    align-items: center;
+}
+
+.btn_menu_burger{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.box_logo_header{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.text_header {
+    max-width: 149px;
+    font-weight: 400;
+    font-style: italic;
+    color: #899298;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.box_link_language_phone {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+
+
+/* ===========/HEADER========== */
+
+
+/* ===========MAIN========== */
+
+.section_main{
+    background-color:rgba(233, 243, 253, 1);
+    width: 100%;
+    padding-top: 14px;
+    padding-bottom: 63px;
+}
+
+
+.container_main{
+    max-width: 345px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
+
+@media screen and (min-width: 375px) {
+    .container_main {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+.box_title_main{
+    margin-bottom: 30px;
+}
+
+.link_reviews{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    color: rgba(130, 130, 130, 1);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+
+.search_results_text{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.75;
+    color: rgba(3, 92, 166, 1)
+}
+
+
+.title_main{
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.16;
+    text-transform: uppercase;
+    color: rgba(23, 23, 25, 1);
+
+}
+
+
+.list_card_main {
+    /* margin-left: 15px;
+    margin-right: 15px;
+    max-width: 345px; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+
+
+
+.item_card_main{
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 18px;
+    width: 100%;
+}
+
+
+.photo_card_main{
+    display: block;
+    width: 100%;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+
+}
+
+
+.info_card_main{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+}
+
+
+.title_card_main{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+    color:rgba(3, 92, 166, 1);
+}
+
+
+.span_title_card_main{
+    font-weight: 700;
+}
+
+
+.text_card_main{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: rgba(0, 0, 0, 1);
+}
+
+
+.span_text_card_main{
+    font-weight: 600;
+}
+
+
+.box_btn_data_card_main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
+
+
+.btn_card_main{
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(3, 92, 166, 1);
+    border-radius: 30px;
+    border: solid 1px rgba(3, 92, 166, 1);
+    cursor: pointer;
+}
+
+.data_card_main{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: rgba(130, 130, 130, 1);
+}
+
+
+.box_pagination{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.btn_pagination{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.11;
+    color: rgba(30, 145, 205, 1);
+}
+
+
+.icon_show_more_main{
+    width: 13px;
+    height: 13px;
+}
+
+
+/* ===========/MAIN========== */
+
+
+/* ===========FOOTER========== */
+
+.section_footer{
+    background-color: rgba(0, 90, 165, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list_nav_link_footer{
+    display: flex;
+    gap: 30px;
+    padding-top: 23px;
+    padding-bottom: 19px;
+}
+
+
+
+.link_footer{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 1);
+}
+
+.box_social_media_footer{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    align-items: center;
+    width: 100%;
+    padding-top: 16px;
+    padding-bottom: 26px;
+    background-color: rgba(34, 133, 214, 1);
+}
+
+
+.title_social_media_footer{
+    color: rgba(255, 255, 255, 1);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42;
+}
+
+
+.list_social_media_link_footer{
+    display: flex;
+    gap: 10px;
+}
+
+
+.link_social_media_link_footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(234, 241, 246, 1);
+    border-radius: 50%;
+}
+
+
+.box_contact_info_footer{
+    padding-top: 30px;
+    padding-bottom: 23px;
+}
+
+
+.phone_footer{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 4px;
+
+}
+
+
+.box_number_phone{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+
+.number_phone_footer{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1;    
+    color: rgba(255, 255, 255, 1);
+    letter-spacing: -0.02em;   
+}
+
+
+.container_location_time_footer{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+.box_location_time_footer{
+    display: flex;
+    gap: 11px;
+    margin-left: 4px;
+}
+
+
+.text_location_time_footer{
+    color: rgba(255, 255, 255, 1);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+
+}
+
+
+
+.list_info_footer{
+    width: 183px;
+    padding-left: 8px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.link_info_footer{
+    text-align: left;
+    display: block;
+    height: 38px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+
+
+
+.box_license{
+
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 38px;
+    background-color: rgba(6, 79, 139, 1);
+}
+
+
+.text_license{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+}
+
+/* ===========/FOOTER========== */
+
+
