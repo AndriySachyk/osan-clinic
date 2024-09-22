@@ -35,9 +35,10 @@ body {
 }
 
 
+
   /* ===========HEADER========== */
 
-
+/* 
 .section_header{
     display: flex;
     justify-content: space-between;
@@ -72,14 +73,14 @@ body {
     gap: 16px;
 }
 
-
+ */
 
 /* ===========/HEADER========== */
 
 
 /* ===========MAIN========== */
 
-.section_main{
+.entry-section_main{
     background-color:rgba(233, 243, 253, 1);
     width: 100%;
     padding-top: 14px;
@@ -87,7 +88,7 @@ body {
 }
 
 
-.container_main{
+.entry-container_main{
     max-width: 345px;
     margin-left: 15px;
     margin-right: 15px;
@@ -96,18 +97,18 @@ body {
 
 
 @media screen and (min-width: 375px) {
-    .container_main {
+    .entry-container_main {
         margin-left: auto;
         margin-right: auto;
     }
 }
 
 
-.box_title_main{
+.entry-box_title_main{
     margin-bottom: 30px;
 }
 
-.link_reviews{
+.entry-link_reviews{
     display: flex;
     align-items: center;
     gap: 18px;
@@ -115,48 +116,51 @@ body {
     font-size: 14px;
     font-weight: 400;
     line-height: 1;
+    margin-bottom: 16px;
 }
 
 
-.search_results_text{
+.entry-box__search_results_text_title_main{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.entry-search_results_text{
     font-size: 24px;
     font-weight: 600;
-    line-height: 1.75;
+    line-height: 1;
     color: rgba(3, 92, 166, 1)
 }
 
 
-.title_main{
+.entry-title_main{
     font-size: 36px;
     font-weight: 600;
-    line-height: 1.16;
+    line-height: 1;
     text-transform: uppercase;
     color: rgba(23, 23, 25, 1);
 
 }
 
 
-.list_card_main {
-    /* margin-left: 15px;
-    margin-right: 15px;
-    max-width: 345px; */
+.entry-list_card_main {
     display: flex;
     flex-direction: column;
     gap: 20px;
-
 }
 
 
 
 
-.item_card_main{
+.entry-item_card_main{
     background-color: rgba(255, 255, 255, 1);
     border-radius: 18px;
     width: 100%;
 }
 
 
-.photo_card_main{
+.entry-photo_card_main{
     display: block;
     width: 100%;
     border-top-left-radius: 18px;
@@ -165,7 +169,7 @@ body {
 }
 
 
-.info_card_main{
+.entry-info_card_main{
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -173,7 +177,7 @@ body {
 }
 
 
-.title_card_main{
+.entry-title_card_main{
     font-size: 20px;
     font-weight: 600;
     line-height: 1.2;
@@ -181,12 +185,12 @@ body {
 }
 
 
-.span_title_card_main{
+.entry-span_title_card_main{
     font-weight: 700;
 }
 
 
-.text_card_main{
+.entry-text_card_main{
     font-size: 15px;
     font-weight: 400;
     line-height: 1.4;
@@ -194,12 +198,12 @@ body {
 }
 
 
-.span_text_card_main{
+.entry-span_text_card_main{
     font-weight: 600;
 }
 
 
-.box_btn_data_card_main{
+.entry-box_link_data_card_main{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -208,7 +212,7 @@ body {
 }
 
 
-.btn_card_main{
+.entry-link_card_main{
     padding: 15px 20px;
     font-size: 16px;
     font-weight: 400;
@@ -218,7 +222,7 @@ body {
     cursor: pointer;
 }
 
-.data_card_main{
+.entry-data_card_main{
     font-size: 16px;
     font-weight: 400;
     line-height: 1.6;
@@ -226,14 +230,14 @@ body {
 }
 
 
-.box_pagination{
+.entry-box_pagination{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 20px;
 }
 
-.btn_pagination{
+.entry-btn_pagination{
     display: flex;
     gap: 12px;
     align-items: center;
@@ -244,17 +248,158 @@ body {
 }
 
 
-.icon_show_more_main{
+.entry-icon_show_more_main{
     width: 13px;
     height: 13px;
 }
 
 
+.entry-list_number_pagitanion{
+    display: flex;
+    gap: 5px;
+    padding-top: 30px;
+}
+
+.entry-item_number_pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.11;
+    color: rgba(23, 23, 25, 1);
+    border-radius: 50%;
+    background-image: none;
+    transition: all 0.5s ease;
+}
+
+
+.entry-item_number_pagination:hover {
+    background-image: linear-gradient(0deg, #005AA5 0.06%, #1E91CD 99.97%);
+    color: rgba(255, 255, 255, 1);
+}
+
+
+@media screen and (min-width: 901px) {
+    .entry-section_main{
+        padding-top: 50px;
+        padding-bottom: 84px;
+    }
+
+
+    .entry-container_main{
+        max-width: 1170px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    
+    
+    
+    @media screen and (min-width: 1200px) {
+        .entry-container_main {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    
+
+    .entry-box_title_main{
+        margin-bottom: 60px;
+    }
+
+    .entry-link_reviews{
+        margin-bottom: 23px;
+    }
+    
+    .entry-box__search_results_text_title_main{
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .entry-search_results_text{
+        font-size: 48px;
+        line-height: 1.14;
+    }
+    
+    
+    .entry-title_main{
+        font-size: 48px;
+        line-height: 1.14;       
+    }
+    
+
+    .entry-list_card_main {
+        gap: 30px;
+    }
+    
+
+    .entry-item_card_main{
+        display: flex;
+        height: 339px;
+        border-radius: 20px;
+    }
+
+
+    .entry-photo_card_main{
+        width: 400px;
+        height: 100%;    
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 0;
+    
+    }
+    
+    
+    .entry-info_card_main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        padding: 40px 30px 40px 70px;
+    }
+    
+ 
+    .entry-title_card_main{
+        font-size: 26px;
+        line-height: 1;
+        margin-bottom: 20px;
+    }
+        
+    
+    .entry-text_card_main{
+        font-size: 18px;
+        line-height: 1.4;
+        margin-bottom: 24px;
+        overflow-y: auto;
+    }
+          
+    
+    .entry-box_pagination{
+        padding-top: 30px;
+    }
+    
+
+}
+
+
+
+
+
+
+
+
+
 /* ===========/MAIN========== */
 
 
-/* ===========FOOTER========== */
 
+
+
+/* ===========FOOTER========== */
+/* 
 .section_footer{
     background-color: rgba(0, 90, 165, 1);
     display: flex;
@@ -407,7 +552,7 @@ body {
     line-height: 14px;
     text-align: center;
     color: rgba(255, 255, 255, 1);
-}
+} */
 
 /* ===========/FOOTER========== */
 

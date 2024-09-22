@@ -10,7 +10,7 @@
     <title>Osan Clinic</title>
 </head>
 <body>
-    <header>
+    <!-- <header>
         <section class="section_header">
             <button class="btn_menu_burger"><img src="./img/menu_burger.svg" alt=""></button>
             <div class="box_logo_header">
@@ -22,77 +22,110 @@
                 <a href="tel:+380123456789"><img src="./img/phone_call.svg" alt="phone"></a>
             </div>
         </section>
-    </header>
+    </header> -->
 
     <main>
-        <section class="section_main">
-            <div class="container_main">
-                <div class="box_title_main">
-                    <a href="" class="link_reviews"> <img src="./img/rectangle.svg" alt=""> Відгуки</a>
-                    <h2 class="search_results_text">Результати пошуку для:</h2>
-                    <h1 class="title_main">біль у коліні</h1>
+        <section class="entry-section_main">
+            <div class="entry-container_main">
+                <div class="entry-box_title_main">
+                    <a href="" class="entry-link_reviews"> <img src="./img/rectangle.svg" alt=""> Відгуки</a>
+                    <div class="entry-box__search_results_text_title_main">
+                        <h2 class="entry-search_results_text">Результати пошуку для:</h2>
+                        <h1 class="entry-title_main">біль у коліні</h1>
+                    </div>
                 </div>
-                <ul class="list_card_main">
-                    <li class="item_card_main">
+                <ul class="entry-list_card_main">
+                    <li class="entry-item_card_main">
                         <picture>
                             <source 
                             srcset="./img/bil_kolina.jpg 1x, ./img/bil_kolina@2x.jpg 2x"
-                            media="(max-width: 768px)"  
+                            media="(max-width: 900px)"  
                             >
-                            <img class="photo_card_main" src="./img/bil_kolina.jpg" alt="біль коліна" >
+                            <source 
+                            srcset="./img/bil_kolina_desktop.jpg 1x, ./img/bil_kolina_desktop@2x.jpg 2x"
+                            media="(min-width: 901px)"  
+                            >
+                            <img class="entry-photo_card_main" src="./img/bil_kolina_desktop.jpg" alt="біль коліна" >
                         </picture> 
-                        <div class="info_card_main">
-                            <h3 class="title_card_main">Лікування <span class="span_title_card_main">болей у колінному</span>  суглобі у Києві</h3>
-                            <p class="text_card_main"> <span class="span_text_card_main">Біль у колінному</span> суглобі — часта проблема, яка значно погіршує якість життя. Болі можуть бути гострими або тягнучими, поширюватися вниз або вгору по нозі. Часто супроводжу-ються припухлістю, обмежують рухи і посилюються під час ходьби. Медичний центр вертебрології, ортопедії та неврології “Осанклінік” пропонує якісні діагностику та лікування болю в коліні з використанням новітніх методів і обладнання.</p>
-                            <div class="box_btn_data_card_main">
-                                <button class="btn_card_main">Детальніше</button>
-                                <span class="data_card_main">21.08.2023</span>
+                        <div class="entry-info_card_main">
+                            <h3 class="entry-title_card_main">
+                                <a href="#" class="entry-link_title_card">
+                                    Лікування <span clnkss="entry-span_title_card_main">болей у колінному</span>  суглобі у Києві
+                                </a>
+                            </h3>
+                            <p class="entry-text_card_main"> <span class="entry-span_text_card_main">Біль у колінному</span> суглобі — часта проблема, яка значно погіршує якість життя. Болі можуть бути гострими або тягнучими, поширюватися вниз або вгору по нозі. Часто супроводжу-ються припухлістю, обмежують рухи і посилюються під час ходьби. Медичний центр вертебрології, ортопедії та неврології “Осанклінік” пропонує якісні діагностику та лікування болю в коліні з використанням новітніх методів і обладнання.</p>
+                            <div class="entry-box_link_data_card_main">
+                                <a class="entry-link_card_main">Детальніше</a>
+                                <span class="entry-data_card_main">21.08.2023</span>
                             </div>
                         </div>
                     </li>
-                    <li class="item_card_main">
+                    <li class="entry-item_card_main">
                         <picture>
                             <source 
                             srcset="./img/bil_kolina.jpg 1x, ./img/bil_kolina@2x.jpg 2x"
-                            media="(max-width: 768px)"  
+                            media="(max-width: 900px)"  
                             >
-                            <img class="photo_card_main" src="./img/bil_kolina.jpg" alt="біль коліна" >
+                            <source 
+                            srcset="./img/bil_kolina_desktop.jpg 1x, ./img/bil_kolina_desktop@2x.jpg 2x"
+                            media="(min-width: 901px)"  
+                            >
+                            <img class="entry-photo_card_main" src="./img/bil_kolina_desktop.jpg" alt="біль коліна" >
                         </picture> 
-                        <div class="info_card_main">
-                            <h3 class="title_card_main">Лікування <span class="span_title_card_main">болей у колінному</span>  суглобі у Києві</h3>
-                            <p class="text_card_main"> <span class="span_text_card_main">Біль у колінному</span> суглобі — часта проблема, яка значно погіршує якість життя. Болі можуть бути гострими або тягнучими, поширюватися вниз або вгору по нозі. Часто супроводжу-ються припухлістю, обмежують рухи і посилюються під час ходьби. Медичний центр вертебрології, ортопедії та неврології “Осанклінік” пропонує якісні діагностику та лікування болю в коліні з використанням новітніх методів і обладнання.</p>
-                            <div class="box_btn_data_card_main">
-                                <button class="btn_card_main">Детальніше</button>
-                                <span class="data_card_main">21.08.2023</span>
+                        <div class="entry-info_card_main">
+                            <h3 class="entry-title_card_main">
+                                <a href="#" class="entry-link_title_card">
+                                    Лікування <span clnkss="entry-span_title_card_main">болей у колінному</span>  суглобі у Києві
+                                </a>
+                            </h3>
+                            <p class="entry-text_card_main"> <span class="entry-span_text_card_main">Біль у колінному</span> суглобі — часта проблема, яка значно погіршує якість життя. Болі можуть бути гострими або тягнучими, поширюватися вниз або вгору по нозі. Часто супроводжу-ються припухлістю, обмежують рухи і посилюються під час ходьби. Медичний центр вертебрології, ортопедії та неврології “Осанклінік” пропонує якісні діагностику та лікування болю в коліні з використанням новітніх методів і обладнання.</p>
+                            <div class="entry-box_link_data_card_main">
+                                <a class="entry-link_card_main">Детальніше</a>
+                                <span class="entry-data_card_main">21.08.2023</span>
                             </div>
                         </div>
                     </li>
-                    <li class="item_card_main">
+                    <li class="entry-item_card_main">
                         <picture>
                             <source 
                             srcset="./img/bil_kolina.jpg 1x, ./img/bil_kolina@2x.jpg 2x"
-                            media="(max-width: 768px)"  
+                            media="(max-width: 900px)"  
                             >
-                            <img class="photo_card_main" src="./img/bil_kolina.jpg" alt="біль коліна" >
+                            <source 
+                            srcset="./img/bil_kolina_desktop.jpg 1x, ./img/bil_kolina_desktop@2x.jpg 2x"
+                            media="(min-width: 901px)"  
+                            >
+                            <img class="entry-photo_card_main" src="./img/bil_kolina_desktop.jpg" alt="біль коліна" >
                         </picture> 
-                        <div class="info_card_main">
-                            <h3 class="title_card_main">Лікування <span class="span_title_card_main">болей у колінному</span>  суглобі у Києві</h3>
-                            <p class="text_card_main"> <span class="span_text_card_main">Біль у колінному</span> суглобі — часта проблема, яка значно погіршує якість життя. Болі можуть бути гострими або тягнучими, поширюватися вниз або вгору по нозі. Часто супроводжу-ються припухлістю, обмежують рухи і посилюються під час ходьби. Медичний центр вертебрології, ортопедії та неврології “Осанклінік” пропонує якісні діагностику та лікування болю в коліні з використанням новітніх методів і обладнання.</p>
-                            <div class="box_btn_data_card_main">
-                                <button class="btn_card_main">Детальніше</button>
-                                <span class="data_card_main">21.08.2023</span>
+                        <div class="entry-info_card_main">
+                            <h3 class="entry-title_card_main">
+                                <a href="#" class="entry-link_title_card">
+                                    Лікування <span clnkss="entry-span_title_card_main">болей у колінному</span>  суглобі у Києві
+                                </a>
+                            </h3>
+                            <p class="entry-text_card_main"> <span class="entry-span_text_card_main">Біль у колінному</span> суглобі — часта проблема, яка значно погіршує якість життя. Болі можуть бути гострими або тягнучими, поширюватися вниз або вгору по нозі. Часто супроводжу-ються припухлістю, обмежують рухи і посилюються під час ходьби. Медичний центр вертебрології, ортопедії та неврології “Осанклінік” пропонує якісні діагностику та лікування болю в коліні з використанням новітніх методів і обладнання.</p>
+                            <div class="entry-box_link_data_card_main">
+                                <a class="entry-link_card_main">Детальніше</a>
+                                <span class="entry-data_card_main">21.08.2023</span>
                             </div>
                         </div>
                     </li>
+                    
                 </ul>
-                <div class="box_pagination">
-                    <button class="btn_pagination"> Показати ще <img class="icon_show_more_main" src="./img/show_more.svg" alt=""/></button>
+                <div class="entry-box_pagination">
+                    <button class="entry-btn_pagination"> Показати ще <img class="entry-icon_show_more_main" src="./img/show_more.svg" alt=""/></button>
+                    <ul class="entry-list_number_pagitanion">
+                        <li class="entry-item_number_pagination">1</li>
+                        <li class="entry-item_number_pagination">2</li>
+                        <li class="entry-item_number_pagination">3</li>
+                        <li class="entry-item_number_pagination">4</li>
+                    </ul>
                 </div>
             </div>
         </section>
     </main>
     
-    <footer>
+    <!-- <footer>
         <section class="section_footer">
             <nav>
                 <ul class="list_nav_link_footer">
@@ -179,6 +212,6 @@
                 <p class="text_license">Лицензия № 00000000000000000</p>
             </div>
         </section>
-    </footer>
+    </footer> -->
 </body>
 </html>
